@@ -1,5 +1,16 @@
 name: Build and Lint
-on: push
+on: 
+  pull_request:
+    types:
+      -opened
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+    - main
+    - 'dev-*'
+  
+  
 jobs:
   build:
     runs-on: ubuntu-latest
