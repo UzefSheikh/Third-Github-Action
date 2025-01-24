@@ -1,0 +1,14 @@
+name : Build and Lint
+on : push
+jobs:
+  build :
+  runs-on: ubuntu_latest
+    steps :
+      - name: check-out
+        uses: actions/checkout@v3
+      - name : install dependency
+        run: npm install ci
+      - name : eslint 
+        run : npm run lint
+    
+  
