@@ -2,15 +2,13 @@ name: Build and Lint
 on: 
   pull_request:
     types:
-      -opened
+      - opened
   workflow_dispatch:
   push:
     branches:
     - master
     - main
     - 'dev-*'
-  
-  
 jobs:
   build:
     runs-on: ubuntu-latest
