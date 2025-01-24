@@ -5,7 +5,7 @@ jobs:
     runs-on : ubuntu-latest
     steps:
       - name : inspect
-        run : echo ${{ toJson( github )}}
+        run : echo "${{ toJson( github )}}"
     
     
     
