@@ -1,0 +1,11 @@
+name : issues
+on : issues
+jobs:
+  issues-job:
+    runs-on : ubuntu_latest
+    steps:
+      - name : inspect
+        runs : echo ${{ toJson( github )}}
+    
+    
+    
