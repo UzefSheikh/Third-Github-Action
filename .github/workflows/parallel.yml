@@ -2,7 +2,7 @@ name: workflow2
 on : push
 jobs:
   lint-job:
-  runs-on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name : checkout
         uses : actions/checkout@v3
@@ -11,7 +11,7 @@ jobs:
       - name : lint
         run : npm run lint
   test-job:
-  runs-on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name : checkout
         uses : actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       - name : test
         run : npm run test
   build-job:
-  runs-on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name : checkout
         uses : actions/checkout@v3
